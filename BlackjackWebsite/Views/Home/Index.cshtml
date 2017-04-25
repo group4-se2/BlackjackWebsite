@@ -1,0 +1,113 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="container">
+
+    <div class="jumbotron">
+        <img src="~/Images/card-logo.png" width="175" height="175" />
+        <h1>BLACKJACK</h1>
+        <div class="row">
+            <div class="col-md-6"><img class="img-responsive img-rounded" src="~/Images/screenshot.png"/></div>
+            <div class="col-md-6"><p style="padding:10px; font-size:14px;">This Blackjack game was created by a Software Engineering 2 group at UWF. This program allows players on a local network to play Blackjack together. Players will able to complete standard blackjack actions like Bet, Hit, Stand, etc.</p></div>
+        </div>
+        <br />
+        
+        <p><a class="btn btn-lg btn-success" href="#" role="button">Download Now</a></p>
+    </div>
+    
+    <hr/>
+
+    <span id="aboutLink"></span>
+
+    <div class="row" id="about">
+        <div class="panel panel-default">
+            <div class="panel-heading">About the Software</div>
+            <div class="panel-body">
+                <p>The “Blackjack” game software allows users to play a game of Blackjack over a local network with other players. Players will be able to complete standard Blackjack moves like “Hit”, “Stand”, or “Bet.” Users will be able to install the game and play with other people over a local internet connection. Players will be able to start a new instance of a Blackjack game or join an existing game.</p>
+            </div>
+        </div>
+    </div>
+
+    <span id="screenshotsLink"></span>
+
+    <div class="row" id="screenshots">
+        <div class="panel panel-default">
+            <div class="panel-heading">Screenshots</div>
+            <div class="panel-body">
+
+                <div class="row">
+                    <div class="col-xs-6 col-md-3">
+                        <a href="#" class="thumbnail">
+                            <img src="~/Images/screenshot-2.png" />
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <a href="#" class="thumbnail">
+                            <img src="~/Images/screenshot-3.png" />
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <a href="#" class="thumbnail">
+                            <img src="~/Images/screenshot.png" />
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <a href="#" class="thumbnail">
+                            <img src="~/Images/screenshot-4.png" />
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+   
+    <span id="documentationLink"></span>
+
+    <div class="row" id="documentation">
+        <div class="panel panel-default">
+            <div class="panel-heading">Documentation</div>
+            <div class="panel-body">
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="#">Software Requirements Specification<span class="glyphicon glyphicon-floppy-save pull-right"></span></a></li>
+                    <li><a href="#">Software Version Description<span class="glyphicon glyphicon-floppy-save pull-right"></span></a></li>
+                    <li><a href="#">Software Presentation<span class="glyphicon glyphicon-floppy-save pull-right"></span></a></li>
+                    <li><a href="#">Project Proposa<span class="glyphicon glyphicon-floppy-save pull-right"></span>l</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <span id="surveyLink"></span>
+
+    <div class="row" id="survey">
+        <div class="panel panel-default">
+            <div class="panel-heading">Feedback</div>
+            <div class="panel-body">
+                We would love to hear what you think! Please fill out feedback form below.<br />
+
+                <form method="post" action="../Surveys/Create">
+                    <div class="form-group">
+                        <label for="name">Name: </label>
+                        <input class="form-control" type="text" name="name" id="name" placeholder="Name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address: </label>
+                        <input class="form-control" type="email" name="email" id="email" placeholder="Email Address" />
+                    </div>
+                    <div class="form-group">
+                        <label for="feedback">Feedback</label>
+                        <textarea class="form-control" name="feedback" id="feedback" placeholder="Enter comments/suggestions here..."></textarea>
+                    </div>
+                    <button type="submit" class="form-control btn btn-primary">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2016 Company, Inc.</p>
+    </footer>
+
+</div> <!-- /container -->
